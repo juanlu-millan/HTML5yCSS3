@@ -99,71 +99,75 @@
     <!-- ================ contact section start ================= -->
   <section class="section_gap">
     <div class="container">
-      <h3>Horario de atencion al Cliente</h3>
-      <table>
-          <tr>
-              <td>Lunes</td>
-              <td>Martes</td>
-              <td>Miércoles</td>
-              <td>Jueves</td>
-              <td>Viernes</td>
-          </tr>
-          <tr>
-              <td>9:00</td>
-              <td>10:00</td>
-              <td>9:00</td>
-              <td>10:00</td>
-              <td>9:00</td>
-          </tr>
-          <tr>
-              <td>13:00</td>
-              <td>16:00</td>
-              <td>13:00</td>
-              <td>16:00</td>
-              <td>13:00</td>
-          </tr>
-      </table>
-
-      <h3>Localización</h3>
-      <div class="d-none d-sm-block mb-5 pb-4">
-        <div id="map" style="height: 480px;"></div>
-        <script>
-          function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
-            var grayStyles = [
-              {
-                featureType: "all",
-                stylers: [
-                  { saturation: -90 },
-                  { lightness: 50 }
-                ]
-              },
-              {elementType: 'labels.text.fill', stylers: [{color: '#A3A3A3'}]}
-            ];
-            var map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: 37.2709323, lng: -5.9211297},
-              zoom: 17,
-              styles: grayStyles,
-              scrollwheel:  false
-            });
-          }
-
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
-
+      <div class="row">
+        <div class="col-12">
+          <h3>Horario de atencion al Cliente</h3>
+          <table>
+              <tr>
+                  <td>Lunes</td>
+                  <td>Martes</td>
+                  <td>Miércoles</td>
+                  <td>Jueves</td>
+                  <td>Viernes</td>
+              </tr>
+              <tr>
+                  <td>9:00</td>
+                  <td>10:00</td>
+                  <td>9:00</td>
+                  <td>10:00</td>
+                  <td>9:00</td>
+              </tr>
+              <tr>
+                  <td>13:00</td>
+                  <td>16:00</td>
+                  <td>13:00</td>
+                  <td>16:00</td>
+                  <td>13:00</td>
+              </tr>
+          </table>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Localización</h3>
+          <div class="d-none d-sm-block mb-5 pb-4">
+            <div id="map" style="height: 480px;"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+                var grayStyles = [
+                  {
+                    featureType: "all",
+                    stylers: [
+                      { saturation: -90 },
+                      { lightness: 50 }
+                    ]
+                  },
+                  {elementType: 'labels.text.fill', stylers: [{color: '#A3A3A3'}]}
+                ];
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 37.2709323, lng: -5.9211297},
+                  zoom: 17,
+                  styles: grayStyles,
+                  scrollwheel:  false
+                });
+              }
 
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+
+          </div>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-12">
-          <h2 class="contact-title">Get in Touch</h2>
+          <h2 class="contact-title">Manda tu petición:</h2>
         </div>
         <div class="col-lg-8 mb-4 mb-lg-0">
           <form action="http://dit.gonzalonazareno.org/iesgn/resultado.php" method="post">
-
-              <u class="mediano text-center">Haz tu pedido</u>
               <br />
-              <label > Nombre :</label> <input type="text" name="nombre" size="25" maxlength="20"/>
+              <label>Nombre :</label> <input type="text" name="nombre" size="25" maxlength="20"/>
 
               <br />
 
@@ -187,32 +191,6 @@
 
               <br />
         </form>
-
-
-        </div>
-
-        <div class="col-lg-4">
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-home"></i></span>
-            <div class="media-body">
-              <h3>Buttonwood, California.</h3>
-              <p>Rosemead, CA 91770</p>
-            </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-            <div class="media-body">
-              <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-              <p>Mon to Fri 9am to 6pm</p>
-            </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-              <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-              <p>Send us your query anytime!</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
