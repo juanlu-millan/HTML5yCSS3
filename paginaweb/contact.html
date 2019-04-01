@@ -123,7 +123,7 @@
               <td>13:00</td>
           </tr>
       </table>
-      <p></p>
+
       <h3>Localización</h3>
       <div class="d-none d-sm-block mb-5 pb-4">
         <div id="map" style="height: 480px;"></div>
@@ -159,33 +159,34 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8 mb-4 mb-lg-0">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Enter Message"></textarea>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="Enter email address">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject">
-                </div>
-              </div>
-            </div>
-            <div class="form-group mt-lg-3">
-              <button type="submit" class="main_btn">Send Message</button>
-            </div>
-          </form>
+          <form action="http://dit.gonzalonazareno.org/iesgn/resultado.php" method="post">
+
+              <u class="mediano text-center">Haz tu pedido</u>
+              <br />
+              <label > Nombre :</label> <input type="text" name="nombre" size="25" maxlength="20"/>
+
+              <br />
+
+              <label>Apellidos :</label> <input type="text" name="apellidos" size="30" maxlength="30"/>
+
+              <br />
+
+              <label>Correo :</label> <input type="text" name="correo" size="30" maxlength="30"/>
+
+              <br />
+
+              <label>Dirreción :</label> <input type="text" name="correo" size="30" maxlength="30"/>
+
+              <br />
+
+              <label>Precio :</label> <input type="number" name="Precio" size="4"/>
+
+              <br />
+
+              <input type="submit" name="enviar" value="enviar"/>
+
+              <br />
+        </form>
 
 
         </div>
